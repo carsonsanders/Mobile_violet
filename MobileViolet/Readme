@@ -1,0 +1,45 @@
+* Mobile Violet
+
+** About Mobile Violet **
+
+Mobile Violet aims to bring the sequence diagram functionality of Violet to the Android platform.
+
+** Installs **
+
+Platform Tools Android:
+>homebrew (Website == http://brew.sh/)
+
+$ brew install android-platform-tools
+
+** Running the Application from Terminal **
+
+> Emulator Startup:
+
+$ emulator -adb EMULATOR_NAME(e.g. Nexus_9_API_25(Tablet))
+
+** Instructions to compile and run the application **
+
+1. cd into MobileViolet
+2. Run the commands
+
+$ ./gradlew assembledebug
+$ adb install -r app/build/outputs/apk/app-debug.apk
+$ adb shell am start -n "com.example.mobileviolet/.WorkingActivity"
+
+> Checkstyle Run
+
+$ ./gradlew checkstyle
+
+** How to use Mobile Violet **
+> Creating and Editing Sequence Diagrams
+1) Select "NEW" to start a new instance of sequence diagram.
+2) The following UI has a toolbar with Select, ImplicitNode, CallNode, NoteNode, Call Edge , Return Edge, Note Edge, and a dropdown for loading a
+saved file. With the help of the toolbar the user can create sequence diagrams.
+3) Tap on the Select and then select the ImplicitNode. The user can then name the node under "Properties Enter Name:"
+4) Tap on the Select and then select the CallEdge. The user can then name the edge under "Properties Enter Name:"
+5) The background color of the NoteNode can also be changed by selecting and then tapping the NoteNode.
+6) For the Call edge and return edge the user needs to tap on the first node and then drag the edge to the second node.
+7) The user can also self call by double tapping on the CallNode.
+8) Scroll helps the user to create sequence diagrams which extend the height and width of the screen.
+
+>Saving and Loading Sequence diagrams

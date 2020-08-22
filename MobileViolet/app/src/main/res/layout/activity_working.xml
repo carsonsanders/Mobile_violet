@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.mobileviolet.ModifiedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fillViewport="false"
+    android:visibility="visible">
+
+    <!--<HorizontalScrollView-->
+    <!--android:id="@+id/hsv"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:layout_weight="0"-->
+    <!--android:fillViewport="true"-->
+    <!--android:measureAllChildren="true"-->
+    <!--android:scrollbars="none" >-->
+    <!--<com.example.mobileviolet.ModifiedHorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:id="@+id/hor"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:fillViewport="true"-->
+    <!--android:visibility="visible">-->
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        tools:context="com.example.mobileviolet.WorkingActivity">
+
+        <com.example.mobileviolet.GraphView
+            android:id="@+id/graphview"
+            android:layout_width="1100dp"
+            android:layout_height="1100dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintVertical_bias="1.0"
+            tools:layout_editor_absoluteX="-184dp" />
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="4dp"
+            android:background="@color/colorWhite"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            android:elevation="2dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp">
+
+                <Button
+                    android:id="@+id/button0"
+                    style="@style/Widget.AppCompat.Button.Small"
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
+                    android:background="@drawable/select" />
+
+                <Button
+                    android:id="@+id/button1"
+                    style="@style/Widget.AppCompat.Button.Small"
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
+                    android:background="@drawable/node1" />
+
+                <Button
+                    android:id="@+id/button2"
+                    style="@style/Widget.AppCompat.Button.Small"
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
+                    android:background="@drawable/callnode1" />
+
+                <Button
+                    android:id="@+id/button3"
+                    style="@style/Widget.AppCompat.Button.Small"
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
+                    android:background="@drawable/notenode1" />
+
+                <Button
+                    android:id="@+id/button7"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
+                    android:background="@drawable/arrownode1" />
+
+                <Button
+                    android:id="@+id/button8"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
+                    android:background="@drawable/retunarrow" />
+
+                <Button
+                    android:id="@+id/buttonNoteEdge"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_weight="0.00"
+                    android:background="@drawable/returnedge" />
+
+                <Button
+                    android:id="@+id/buttonDelete"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_weight="0.00"
+                    android:background="@drawable/delete" />
+
+
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_weight="0.00"
+                    android:background="@drawable/save" />
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:spinnerMode="dropdown" />
+
+                <!--<Button-->
+                <!--android:id="@+id/button10"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginLeft="7dp"-->
+                <!--android:layout_marginStart="7dp"-->
+                <!--android:background="#0f0"-->
+                <!--android:text="in"-->
+                <!--android:textColor="#fff" />-->
+
+                <!--<Button-->
+                <!--android:id="@+id/button11"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginLeft="7dp"-->
+                <!--android:layout_marginStart="7dp"-->
+                <!--android:background="#f00"-->
+                <!--android:text="out"-->
+                <!--android:textColor="#fff" />-->
+
+
+                <!--<Button-->
+                <!--android:id="@+id/button10"-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="70dp"-->
+                <!--android:layout_marginLeft="7dp"-->
+                <!--android:layout_marginStart="7dp"-->
+                <!--android:layout_weight="0.50"-->
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.constraint.ConstraintLayout>
+
+</com.example.mobileviolet.ModifiedScrollView>

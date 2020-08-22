@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MobileViolet</string>
+    <string name="button_new">New</string>
+    <string name="welcome">DisplayMessageActivity</string>
+    <string name="button_tutorial">Tutorial</string>
+    <string name="text_violet">MOBILEVIOLET</string>
+    <string name="Node">ELEMENT</string>
+    <string name="button_implicitnode">ImplicitParameter</string>
+    <string name="text_color">Color</string>
+    <string-array name="save_array">
+        <item>New</item>
+        <item>Save2</item>
+        <item>Save3</item>
+        <item>Save4</item>
+        <item>Save5</item>
+        <item>Save6</item>
+        <item>Save7</item>
+        <item>Save8</item>
+    </string-array>
+</resources>
